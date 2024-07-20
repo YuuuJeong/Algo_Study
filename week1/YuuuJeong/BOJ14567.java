@@ -57,7 +57,7 @@ public class BOJ14567 {
         for (int i = 1; i <= N; i++) {
             sb.append(count[i]).append(" ");
         }
-
         System.out.println(sb.toString());
+        br.close();
     }
 }
