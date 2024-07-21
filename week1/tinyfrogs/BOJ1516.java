@@ -18,6 +18,7 @@ public class BOJ1516 {
         }
     }
 
+    static int[] result;
     static Building[] buildings;
     static Queue<Integer> q = new LinkedList<>();
 
@@ -29,6 +30,7 @@ public class BOJ1516 {
         int N = Integer.parseInt(br.readLine());
 
         buildings = new Building[N + 1];
+        result = new int[N + 1];
 
         for (int i = 1; i <= N; i++) {
             buildings[i] = new Building();
@@ -36,7 +38,9 @@ public class BOJ1516 {
 
         for (int i = 1; i <= N; i++) {
             st = new StringTokenizer(br.readLine());
-            buildings[i].time = Integer.parseInt(st.nextToken());
+            int time = Integer.parseInt(st.nextToken());
+            buildings[i].time = time;
+            result[i] = time;
             while (true) {
                 int num = Integer.parseInt(st.nextToken());
                 if (num == -1) break;
@@ -54,19 +58,17 @@ public class BOJ1516 {
         solve();
 
         for (int i = 1; i <= N; i++) {
-            sb.append(buildings[i].time).append("\n");
+            sb.append(result[i]).append("\n");
         }
 
         System.out.println(sb);
-
-
     }
 
     static void solve() {
         while (!q.isEmpty()) {
             int current = q.poll();
             for (int next : buildings[current].next) {
-                buildings[next].time = Math.max(buildings[next].time, buildings[next].time + buildings[current].time);
+                result[next] = Math.max(result[next], result[current] + buildings[next].time);
                 buildings[next].prev--;
                 if (buildings[next].prev > 0) continue;
                 q.offer(next);
