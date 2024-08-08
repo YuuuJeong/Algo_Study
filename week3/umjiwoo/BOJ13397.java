@@ -1,3 +1,5 @@
+package umjiwoo;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -36,7 +38,6 @@ public class BOJ13397 {
 		int right=max_num-min_num;
 		while(left<=right) {
 			int mid=(left+right+1)/2;
-			System.out.println("mid="+mid);
 			
 			List<List<Integer>> r_lists=new ArrayList<>();
 			int count=1;
@@ -57,7 +58,6 @@ public class BOJ13397 {
 					}
 				}
 			}
-			System.out.println("count="+count);
 			
 			if(count>=m) {
 				left=mid+1;
@@ -65,9 +65,6 @@ public class BOJ13397 {
 			else {
 				right=mid-1;
 			}
-			
-			System.out.println("left="+left);
-			System.out.println("right="+right);
 		}
 		
 		System.out.println(right+1);
