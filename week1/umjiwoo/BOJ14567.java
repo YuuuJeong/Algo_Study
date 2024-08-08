@@ -5,7 +5,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class BOJ14567 {
-
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		String[] nm=sc.nextLine().split(" ");
