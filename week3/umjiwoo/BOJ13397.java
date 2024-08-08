@@ -66,7 +66,6 @@ public class BOJ13397 {
 				right=mid-1;
 			}
 		}
-		
 		System.out.println(right+1);
 	}
 
