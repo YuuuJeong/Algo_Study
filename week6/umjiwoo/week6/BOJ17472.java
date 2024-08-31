@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Swea17472 {
+public class BOJ17472 {
 	static int N, M;
     static int[][] map;
     static int[][] dist;
