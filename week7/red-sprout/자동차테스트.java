@@ -21,6 +21,7 @@ public class Main {
         for(int i = 0; i < q; i++) {
             int m = Integer.parseInt(br.readLine());
             int idx = Arrays.binarySearch(rate, m);
+            
             if(idx < 0) sb.append(0);
             else sb.append(idx * (n - 1 - idx));
             sb.append("\n");
