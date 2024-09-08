@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main {
+
     static final int dirtyRoom = 1;
     static final int wall = -1;
     static final int[] dirX = {1, -1, 0, 0};
