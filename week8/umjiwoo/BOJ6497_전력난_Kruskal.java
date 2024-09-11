@@ -13,7 +13,6 @@ public class BOJ6497_전력난_Kruskal {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = null;
 		StringBuilder sb = new StringBuilder();
-
 		while (true) {
 			st = new StringTokenizer(br.readLine());
 			int m = Integer.parseInt(st.nextToken());
