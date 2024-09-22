@@ -10,7 +10,6 @@ public class BOJ_2342 {
     static long[][][] dp;
     static List<Integer> steps;
     static long answer;
-
     public static void main(String[] args) throws IOException {
         steps = new ArrayList<>();
         answer = Integer.MAX_VALUE;
