@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class BOJ_2342 {
+public class BOJ_1520 {
     static int[][] map, dp;
     static int N, M;
     private static int[] dirX = {1, -1, 0, 0};
