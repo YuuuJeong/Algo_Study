@@ -55,7 +55,7 @@ class Solution {
         Trie reverseTrie = new Trie();
 
         for (String word : words) {
-            trie.insert(word); // 정방향 삽입
+            trie.insert(word); //  정방향 삽입
             reverseTrie.insert(new StringBuilder(word).reverse().toString()); // 역방향 삽입
         }
 
