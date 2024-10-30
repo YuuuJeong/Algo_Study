@@ -16,7 +16,6 @@ public class BOJ11779_최소비용구하기2 {
 
 		st = new StringTokenizer(br.readLine());
 		int n = Integer.parseInt(st.nextToken()); // 도시 수
-
 		st = new StringTokenizer(br.readLine());
 		int m = Integer.parseInt(st.nextToken()); // 버스 수
 

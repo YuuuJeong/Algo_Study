@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 // 도시의 모든 집을 불이 켜진 길로 왕래할 수 있어야 함
 // 즉, 가로등을 모두 켜두었을 때 드는 비용에서 모든 집들을 최소 비용으로 연결했을 때 드는 비용을 빼면 그게 바로 절약할 수 있는 최대 액수
 public class BOJ6497_전력난 {
-
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = null;
